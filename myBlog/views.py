@@ -15,6 +15,7 @@ def about(request):
 	return render(request, 'about.html')
 
 def post(request):
+	#posts = post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 	return render(request, 'post.html')
 			
 def contact(request):
